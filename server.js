@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const env = process.env.NODE_ENV; // production or development
 mongoose.connect(
 		env == 'development' ? 'mongodb://localhost/test' : 
-		`mongodb://${config.mongo_username}:${config.mongo_password}@ds233218.mlab.com:33218/heroku_5hndmcj2`
+		`mongodb://${config.mongo_username}:${config.mongo_password}@ds233218.mlab.com:33218/heroku_2267tp7m`
 );
 mongoose.Promise = Promise;
 
