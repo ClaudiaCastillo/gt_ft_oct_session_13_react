@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "NODE_ENV=development concurrently \"nodemon server.js\" \"cd ./client && npm start\"",
-    "start": "node ./server.js"
+    "start": "node ./server.js",
+    "heroku-postbuild": "cd client && yarn --production=false && yarn run build"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
